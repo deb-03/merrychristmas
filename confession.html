@@ -55,13 +55,23 @@
             font-size: 10px;           
                     
         }
+        button{
+            display: n;
+        }
 
     </style>
 </head>
 <body>
-        <audio autoplay loop controls>
-            <source src="Make You Mine.mp3" type="audio/mp3">
-            </audio>
+         <audio id="myAudio" loop controls>
+        <source src="Make You Mine.mp3" type="audio/mp3">
+       </audio>
+        <script>
+        document.addEventListener('click', function playAudioOnce() {
+            const audio = document.getElementById('myAudio');
+            audio.play();
+            document.removeEventListener('click', playAudioOnce);
+        });
+    </script>
     <section>
         <p>
             
