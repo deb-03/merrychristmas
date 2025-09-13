@@ -51,13 +51,43 @@
 
         .confession {
             background: none !important;  
-            color: gray !important;      
+            color: rgb(220, 219, 219)  !important;      
             font-size: 10px;           
-                    
+            font-style: italic;
+            font-size: bold;
         }
-        button{
-            display: n;
+         @media screen and (max-width: 768px) {
+        section {
+            height: auto;
+            padding: 20px;
         }
+
+        p {
+            font-size: 6px;             
+            width: 100vw;                
+            line-height: 1.1em;
+            background-size: contain;    
+            background-position: center;
+            word-break: break-word;      
+        }
+
+        .confession {
+            font-size: 8px;  
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        p {
+            font-size: 5px;  
+            width: 100vw;
+        }
+
+        .confession {
+            font-size: 7px;
+        }
+    }
+        
+        
 
     </style>
 </head>
