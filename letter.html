@@ -36,13 +36,12 @@
             font-weight: 400;
             line-height: 1.2em;
             background: url('rosie.jpg');
-            background-blend-mode: color-burn; 
+            background-blend-mode: color-burn;
             background-position: center;
             background-size: cover;
             -webkit-background-clip: text;
             color: transparent;
             width: 200vh;
-            
             text-align: center; 
         }
         audio{
@@ -51,41 +50,15 @@
 
         .confession {
             background: none !important;  
-            color: rgb(220, 219, 219)  !important;      
+            color: rgb(252, 249, 249)  !important;      
             font-size: 10px;           
             font-style: italic;
             font-size: bold;
         }
-         @media screen and (max-width: 768px) {
-        section {
-            height: auto;
-            padding: 20px;
-        }
-
-        p {
-            font-size: 6px;             
-            width: 100vw;                
-            line-height: 1.1em;
-            background-size: contain;    
-            background-position: center;
-            word-break: break-word;      
-        }
-
-        .confession {
-            font-size: 8px;  
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        p {
-            font-size: 5px;  
-            width: 100vw;
-        }
-
-        .confession {
-            font-size: 7px;
-        }
-    }
+         .box{
+            width: 1500px;
+            height: 1000px;
+         }
         
         
 
@@ -102,6 +75,7 @@
             document.removeEventListener('click', playAudioOnce);
         });
     </script>
+    <div class="box">
     <section>
         <p>
             
@@ -657,5 +631,6 @@
             
         </p>
     </section>
+    </div>
 </body>
 </html>
